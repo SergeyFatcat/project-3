@@ -5,6 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
 	<title>Document</title>
 </head>
 
@@ -31,49 +36,75 @@
 						</p>
 					</div>
 					<div class="section-2__img-m">
-						<img src="./img/image 2.1.jpg" alt="lovely room">
-						<button class="btn-prev"></button>
-						<button class="btn-next"></button>
+						<img src="./img/image1.jpg" alt="lovely room">
+						<button class="btn-prev slider-arrow-left"></button>
+						<button class="btn-next slider-arrow-right"></button>
 					</div>
 					<div class="section-2__details">
 						<div class="section-2__details-box">
 							<h3 class="section-2__details-title title">
 								City:
 							</h3>
-							<span class="section-2__details-text">
+							<span class="section-2__details-text city-details active">
 								Rostov-on-Don <br>
 								LCD admiral
+							</span>
+							<span class="section-2__details-text city-details">
+								Sochi <br>
+								Thieves
+							</span>
+							<span class="section-2__details-text city-details">
+								Rostov-on-Don <br>
+								Patriotic
 							</span>
 						</div>
 						<div class="section-2__details-box">
 							<h3 class="section-2__details-title title">
 								apartment area:
 							</h3>
-							<span class="section-2__details-text">
+							<span class="section-2__details-text apartment-area-details active">
 								81 m2
+							</span>
+							<span class="section-2__details-text apartment-area-details">
+								105 m2
+							</span>
+							<span class="section-2__details-text apartment-area-details">
+								93 m22
 							</span>
 						</div>
 						<div class="section-2__details-box">
 							<h3 class="section-2__details-title title">
 								Repair time:
 							</h3>
-							<span class="section-2__details-text">
+							<span class="section-2__details-text repair-time-details active">
 								3.5 months
+							</span>
+							<span class="section-2__details-text repair-time-details">
+								4 months
+							</span>
+							<span class="section-2__details-text repair-time-details">
+								3 months
 							</span>
 						</div>
 						<div class="section-2__details-box">
 							<h3 class="section-2__details-title title">
 								Repair Cost:
 							</h3>
-							<span class="section-2__details-text">
+							<span class="section-2__details-text repair-cost-details active">
+								Upon request
+							</span>
+							<span class="section-2__details-text repair-cost-details">
+								Upon request
+							</span>
+							<span class="section-2__details-text repair-cost-details">
 								Upon request
 							</span>
 						</div>
 					</div>
 					<div class="section-2__arrows">
 
-						<button class="arrow-left"><svg width="42" height="14" viewBox="0 0 42 14" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
+						<button class="arrow-left slider-arrow-left"><svg width="42" height="14" viewBox="0 0 42 14"
+								fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd"
 									d="M6.63807 13.2761L2.29917e-05 6.63808L6.63807 3.80641e-05L7.58563 0.947606L1.89516 6.63808L7.58563 12.3286L6.63807 13.2761Z"
 									fill="white" />
@@ -104,8 +135,8 @@
 							</svg>
 						</button>
 
-						<button class="arrow-right"><svg width="42" height="14" viewBox="0 0 42 14" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
+						<button class="arrow-right slider-arrow-right"><svg width="42" height="14" viewBox="0 0 42 14"
+								fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd"
 									d="M35.0451 0L41.6831 6.63804L35.0451 13.2761L34.0975 12.3285L39.788 6.63804L34.0975 0.947567L35.0451 0Z"
 									fill="white" />
@@ -117,13 +148,19 @@
 
 					</div>
 				</div>
+				<div class="section-2__img active">
+					<img src="./img/image1.jpg" alt="lovely room">
+				</div>
 				<div class="section-2__img">
-					<img src="./img/image 2.1.jpg" alt="lovely room">
+					<img src="./img/image2.jpg" alt="lovely room">
+				</div>
+				<div class="section-2__img">
+					<img src="./img/image3.jpg" alt="lovely room">
 				</div>
 			</div>
 		</div>
 	</section>
-
+	<script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,6 @@
+@import 'reset';
+@import 'elements';
+
 /*section-2*/
 
 .section-2 {
@@ -129,11 +132,12 @@
 			font-size: 13px;
 			line-height: 21px;
 			color: #FFFFFF;
+			display: none;
+
+			&.active {
+				display: block;
+			}
 		}
-
-
-
-
 	}
 
 
@@ -142,9 +146,13 @@
 		max-width: 679px;
 		height: 100%;
 		overflow: hidden;
-		display: flex;
 		justify-content: center;
 		align-items: center;
+		display: none;
+
+		&.active {
+			display: flex;
+		}
 
 		img {
 			width: 679px;
@@ -264,7 +272,8 @@
 			display: none;
 		}
 
-		&__img {
+		&__img,
+		&__img.active {
 			display: none;
 		}
 	}
